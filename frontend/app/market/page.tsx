@@ -287,9 +287,11 @@ export default function MarketPage() {
           const price = Number(listing.pricePerToken) / divisor;
           const quantity = Number(listing.quantity) / divisor;
           const filled = Number(listing.filled) / divisor;
-          const feePaid = Number(listing.feeAmountPaid) / divisor;
+          
           const available = Math.max(quantity - filled, 0);
           const progress = quantity > 0 ? Math.min(filled / quantity, 1) : 0;
+          
+          const feePaid = (price * quantity) / 100;
 
           return {
             id: listing.listingId.toString(),
