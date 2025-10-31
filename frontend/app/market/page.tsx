@@ -713,12 +713,38 @@ export default function MarketPage() {
               <RefreshCcw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
               Refresh
             </Button>
-            <Button className="gap-2" onClick={openCreateModal}>
+            {/* Create Listing button hidden - web version coming soon */}
+            {/* <Button className="gap-2" onClick={openCreateModal}>
               <Plus className="h-4 w-4" />
               Create Listing
-            </Button>
+            </Button> */}
           </div>
         </div>
+
+        <Card className="mb-8 border-yellow-500/40 bg-yellow-500/10">
+          <CardHeader>
+            <CardTitle className="text-lg text-yellow-200 flex items-center gap-2">
+              <span>⚠️</span>
+              Important Notice
+            </CardTitle>
+            <CardContent className="text-yellow-100/80 space-y-2 pt-0">
+              <p>
+                This market page is a <strong>read-only display</strong> of listings on devnet. The web interface for creating listings is <strong>coming soon</strong>.
+              </p>
+              <p>
+                To create a listing now, you'll need to <strong>fork the repository</strong> and interact with the smart contract directly. Check out the repository at{" "}
+                <a 
+                  href="https://github.com/KuraCod/x402Escrow" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="underline hover:text-yellow-100 transition-colors"
+                >
+                  github.com/KuraCod/x402Escrow
+                </a>
+              </p>
+            </CardContent>
+          </CardHeader>
+        </Card>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <Card>
