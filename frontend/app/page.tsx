@@ -39,7 +39,7 @@ export default function Home() {
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Peer402" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg" className="gap-2 transition-transform hover:scale-105">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-label="X logo">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -312,7 +312,7 @@ export default function Home() {
               }
             ].map((step) => (
               <div key={step.number} className="flex gap-6 group hover:translate-x-2 transition-transform">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-xl font-bold group-hover:bg-white group-hover:text-black transition-colors">
+                <div className="shrink-0 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-xl font-bold group-hover:bg-white group-hover:text-black transition-colors">
                   {step.number}
                 </div>
                 <div className="space-y-2 pt-2">
@@ -356,7 +356,10 @@ export default function Home() {
               <a href="https://www.x402.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 x402.org
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://x.com/Peer402" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                Twitter
+              </a>
+              <a href="https://github.com/KuraCod/x402Escrow" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 GitHub
               </a>
             </div>
