@@ -28,7 +28,7 @@ export function SolanaProvider({ children }: SolanaProviderProps) {
       new SolflareWalletAdapter({ network: WalletAdapterNetwork.Devnet }),
       new TorusWalletAdapter(),
       // Burner wallet provides an easy option for quick devnet testing.
-      new UnsafeBurnerWalletAdapter({ network: WalletAdapterNetwork.Devnet }),
+      new UnsafeBurnerWalletAdapter(),
     ],
     []
   );
