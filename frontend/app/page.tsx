@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Shield, Zap, Lock, DollarSign, Coins, TrendingUp, CheckCircle2 } from "lucide-react";
@@ -10,7 +9,6 @@ import { BentoCard } from "@/components/bento-card";
 import { useState } from "react";
 
 export default function Home() {
-  const router = useRouter();
   const [demoPrice, setDemoPrice] = useState("1.5");
   const [demoQuantity, setDemoQuantity] = useState("1000");
   const [demoFeeMethod, setDemoFeeMethod] = useState<"SOL" | "x402">("SOL");

@@ -20,7 +20,7 @@ use spl_associated_token_account::get_associated_token_address;
 use spl_token::state::{Account as TokenAccount, Mint};
 use thiserror::Error;
 
-declare_id!("8PCHHLP4e5uR61AKPJYpEXf2PbogzhPoVPSPK98JHH4M");
+declare_id!("8DbZKwhFKq1Zi7HGSKfs6AsqS5CLWNCPZkQFuMKsntVt");
 
 entrypoint!(process_instruction);
 
